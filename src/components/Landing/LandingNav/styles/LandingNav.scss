@@ -1,0 +1,28 @@
+@import "../../../../utilities/variables";
+
+.landing-nav{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.landing-nav button{
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 1.38rem;
+    background: $color-3;
+    color: $color-1;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.landing-nav button:hover{
+    background: $color-1;
+    border: 1px solid $color-3;
+    color: $color-3;
+}
