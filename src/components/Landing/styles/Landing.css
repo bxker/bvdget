@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .landing-main {
-  height: 100vh;
   width: 100vw;
-  background: #BBE8BD;
+  background: #f4f5f1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,14 +12,14 @@
 }
 
 .landing-main h1 {
-  color: #f4f5f1;
+  color: white;
   font-size: 6rem;
-  text-shadow: 2px 2px #383838;
+  text-shadow: 3px 3px #175e74;
 }
 
 .landing-main h2 {
   font-size: 4rem;
-  color: #7CA46C;
+  color: #175e74;
 }
 
 .landing-main h3 {
@@ -28,7 +27,7 @@
 }
 
 .landing-container {
-  height: 60vh;
+  height: 500px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,14 +51,29 @@
   width: 175px;
   border-radius: 5px;
   font-size: 1.38rem;
-  background: #7CA46C;
+  background: #175e74;
   color: #f4f5f1;
   cursor: pointer;
+  -webkit-box-shadow: 2px 2px 0px 1px #3fd7eb;
+  box-shadow: 2px 2px 0px 1px #3fd7eb;
 }
 
 .landing-container button:hover {
-  background: white;
-  border: 1px solid #7CA46C;
-  color: #7CA46C;
+  background: #175e74;
+  color: #f4f5f1;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.landing-art {
+  height: 300px;
+  width: 100vw;
+  background: #3fd7eb;
+}
+
+.footer-main {
+  height: 300px;
+  width: 100vw;
+  background: #175e74;
 }
 /*# sourceMappingURL=Landing.css.map */

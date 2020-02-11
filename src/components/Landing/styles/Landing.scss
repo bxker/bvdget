@@ -1,17 +1,17 @@
 @import "../../../utilities/variables";
 
 .landing-main{
-    height: 100vh;
+    // height: 100vh;
     width: 100vw;
-    background: $color-2;
+    background: $color-3;
     display:flex;
     flex-direction: column;
 }
 
 .landing-main h1{
-    color: $color-3;
+    color: white;
     font-size: 6rem;
-    text-shadow: 2px 2px $color-4;
+    text-shadow: 3px 3px $color-1;
 }
 
 .landing-main h2{
@@ -24,7 +24,7 @@
 }
 
 .landing-container{
-    height: 60vh;
+    height: 500px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -42,11 +42,25 @@
     background: $color-1;
     color: $color-3;
     cursor: pointer;
+    -webkit-box-shadow: 2px 2px 0px 1px $color-2;
+    -moz-box-shadow: 2px 2px 0px 1px $color-2;
+    box-shadow: 2px 2px 0px 1px $color-2;
 }
 
 .landing-container button:hover{
-    background: white;
-    border: 1px solid $color-1;
-    color: $color-1;
+    background: $color-1;
+    color: $color-3;
+    transform: scale(1.15);
 }
 
+.landing-art{
+    height: 300px;
+    width: 100vw;
+    background: $color-2;
+}
+
+.footer-main{
+    height: 300px;
+    width: 100vw;
+    background: $color-1;
+}

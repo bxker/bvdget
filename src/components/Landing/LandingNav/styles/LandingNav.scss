@@ -6,6 +6,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background: $color-3;
 }
 
 .landing-nav button{
@@ -15,14 +16,17 @@
     width: 100px;
     border-radius: 5px;
     font-size: 1.38rem;
-    background: $color-3;
-    color: $color-1;
+    background: $color-1;
+    color: $color-3;
     cursor: pointer;
     margin-right: 40px;
+    -webkit-box-shadow: 2px 2px 0px 1px $color-2;
+    -moz-box-shadow: 2px 2px 0px 1px $color-2;
+    box-shadow: 2px 2px 0px 1px $color-2;
 }
 
 .landing-nav button:hover{
     background: $color-1;
-    border: 1px solid $color-3;
     color: $color-3;
+    transform: scale(1.15);
 }
