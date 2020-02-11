@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,sEAAI;ADEZ,AAAA,mBAAmB,CAAA;EACf,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,UAAU,ECEJ,OAAgB;EDDtB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CACtB;;AAED,AAAA,aAAa,CAAA;EACT,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,UAAU,ECLJ,OAAkB;EDMxB,aAAa,EAAE,GAAG;EAClB,kBAAkB,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CCR7B,OAAiB;EDSvB,eAAe,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CCT1B,OAAiB;EDUvB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CCVrB,OAAiB;CDW1B",
     "sources": [
-        "Register.scss"
+        "Register.scss",
+        "../../../utilities/_variables.scss"
     ],
     "names": [],
     "file": "Register.css"

@@ -1,6 +1,5 @@
 import ally from "ally-http-request";
 
-
 //initial state
 const initialState = {
   user_id: null,
@@ -26,6 +25,7 @@ export function getSession(username) {
 }
 
 export function registerUser(newUser) {
+  console.log('hit reducer')
   return {
     type: REGISTER_USER,
     payload: ally.post("/auth/register", newUser)
@@ -54,32 +54,33 @@ export default function reducer(state = initialState, action) {
     case `${GET_SESSION}_FULFILLED`:
       return {
         ...state,
-        user_id: payload.data.user_id,
-        username: payload.data.username,
-        first_name: payload.data.first_name,
-        last_name: payload.data.last_name,
-        email: payload.data.email,
-        profile_img: payload.data.profile_img
+        user_id: payload.user_id,
+        username: payload.username,
+        first_name: payload.first_name,
+        last_name: payload.last_name,
+        email: payload.email,
+        profile_img: payload.profile_img
       };
     case `${REGISTER_USER}_FULFILLED`:
+      console.log(payload)
       return {
         ...state,
-        user_id: payload.data.user_id,
-        username: payload.data.username,
-        first_name: payload.data.first_name,
-        last_name: payload.data.last_name,
-        email: payload.data.email,
-        profile_img: payload.data.profile_img
+        user_id: payload.user_id,
+        username: payload.username,
+        first_name: payload.first_name,
+        last_name: payload.last_name,
+        email: payload.email,
+        profile_img: payload.profile_img
       };
     case `${LOGIN_USER}_FULFILLED`:
       return {
         ...state,
-        user_id: payload.data.user_id,
-        username: payload.data.username,
-        first_name: payload.data.first_name,
-        last_name: payload.data.last_name,
-        email: payload.data.email,
-        profile_img: payload.data.profile_img
+        user_id: payload.user_id,
+        username: payload.username,
+        first_name: payload.first_name,
+        last_name: payload.last_name,
+        email: payload.email,
+        profile_img: payload.profile_img
       };
     case LOGOUT_USER:
       return {

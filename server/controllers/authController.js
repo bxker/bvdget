@@ -6,8 +6,10 @@ const getUser = async (req, res) => {
 
 
 const register = async (req, res) => {
+    console.log('hit')
     const db = req.app.get('db');
     const {username, password, email, first_name, last_name} = req.body;
+    console.log(req.body)
 
     const foundUser = await db.auth.checkForUsername(username);
 
