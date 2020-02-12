@@ -30,7 +30,7 @@ function Login(props) {
                 <section>
                     <h1>Log In</h1>
                 </section>
-                <section>
+                <section className="login-inputs">
                     <input placeholder="Username" onChange={e => setUsername(e.target.value)}></input>
                     <input placeholder="Password" type="password" onChange={e => setPassword(e.target.value)}></input>
                 </section>

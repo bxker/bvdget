@@ -2,7 +2,7 @@
 .register-container {
   height: 100vh;
   width: 100vw;
-  background: #175e74;
+  background: #3fd7eb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +19,123 @@
   width: 500px;
   background: #f4f5f1;
   border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0px 1px #175e74;
+  box-shadow: 2px 2px 0px 1px #175e74;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-box h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 3px 3px #175e74;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.register-inputs {
+  height: 40%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-left {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.register-right {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.register-left {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.register-inputs input {
+  height: 40px;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: larger;
+}
+
+.register-box button {
+  outline: none;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 1.38rem;
+  background: #175e74;
+  color: #f4f5f1;
+  cursor: pointer;
   -webkit-box-shadow: 2px 2px 0px 1px #3fd7eb;
   box-shadow: 2px 2px 0px 1px #3fd7eb;
+}
+
+.register-box button:hover {
+  background: #175e74;
+  color: #f4f5f1;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 /*# sourceMappingURL=Register.css.map */

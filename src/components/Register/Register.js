@@ -39,19 +39,19 @@ function Register(props) {
                 <section>
                     <h1>Sign Up</h1>
                 </section>
-                <section>
-                    <div>
+                <section className="register-inputs">
+                    <div className="register-left">
                         <input placeholder="First Name" onChange={e => setFirstName(e.target.value)}></input>
                         <input placeholder="Last Name" onChange={e => setLastName(e.target.value)}></input>
                         <input placeholder="Username" onChange={e => setUsername(e.target.value)}></input>
                     </div>
-                    <div>
+                    <div className="register-right">
                         <input placeholder="Email" onChange={e => setEmail(e.target.value)}></input>
                         <input placeholder="Password" type="password" onChange={e => setPassword(e.target.value)}></input>
                         <input placeholder="Confirm Password" type="password" onChange={e => setConfirmPassword(e.target.value)}></input>
-                        {password === confirmPassword ? <h2>Passwords Match!</h2>: <h1>Passwords do not match.</h1>}
                     </div>
                 </section>
+                {password === confirmPassword & password !== undefined? <h2>Passwords Match!</h2>: <h2>Passwords do not match.</h2>}
                 <button onClick={register}>Sign Up</button>
             </div>
         </div>
