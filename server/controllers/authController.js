@@ -16,8 +16,7 @@ const register = async (req, res) => {
     if(foundUser[0]){
         res.status(409).json('Username Taken')
     }else {
-        const salt = bcrypt.genSaltSync(10);
-        const hash = bcrypt.hashSync(password, salt);
+        const hash = bcrypt.hash(password, 12);
 
         const newUser = await db.auth.registerUser(email, username, hash, first_name, last_name);
         req.session.user = {
