@@ -41,7 +41,7 @@ const login = async (req, res) => {
     if(!foundUser[0]){
         res.status(403).json('Username or Password incorrect')
     }else{
-        const isAuthenticated = bcrypt.compareSync(password, foundUser[0].hash)
+        const isAuthenticated = bcrypt.compare(password, foundUser[0].hash)
 
         if(!isAuthenticated){
             res.status(403).json('Username or Password Incorrect')
